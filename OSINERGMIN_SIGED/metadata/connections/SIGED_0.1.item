@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
   <TalendMetadata:DatabaseConnection AdditionalParams="" DatabaseType="Oracle with service name" DatasourceName="" DbmsId="oracle_id" DriverClass="oracle.jdbc.OracleDriver" FileFieldName="" NullChar="" Password="enc:system.encryption.key.v1:nBgQVxkBR9HOptL/g69pm7lgpFNKIKyScbjOdTo+0IJd" Port="1521" ProductId="ORACLE" SID="desasiged" SQLMode="false" ServerName="10.10.23.11" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=10.10.23.11)(port=1521))(connect_data=(service_name=desasiged)))" UiSchema="SIGED" Username="siged" dataPackage="_ghy6UJSHEe295KQoOLpnXg" dbVersionString="ORACLE_18" id="_XOCP8JSHEe295KQoOLpnXg" label="SIGED" name="SIGED" supportNLS="false" xmi:id="_gKZuAJSHEe295KQoOLpnXg">
     <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_gKZuAZSHEe295KQoOLpnXg"/>
     <taggedValue tag="package filter" value="" xmi:id="_gMCswJSHEe295KQoOLpnXg"/>
@@ -13,14 +13,33 @@
     <taggedValue tag="DB IdentifierQuoteString" value="&quot;" xmi:id="_gVbSQpSHEe295KQoOLpnXg"/>
     <parameters key="CONN_PARA_KEY_USERNAME" value="siged" xmi:id="_gKZuApSHEe295KQoOLpnXg"/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Schema dataManager="_gKZuAJSHEe295KQoOLpnXg" name="SIGED" xmi:id="_ghy6UJSHEe295KQoOLpnXg"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_282134bc-6666-4e35-bb1d-131aa854ab29"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6m0V6IEGiTnah6gISf7vUr8Nbzrl4MAKMFv42w+ymVA4Ufu5mhIUlkVbAqhXvXXZIZRGrDIz1MuI&#13;
-m2TCteT80Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e1deb8cd-6430-46be-ab06-4b663e73f235"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zJ+d+LBh+xq+4DJ8m+p7jbFpGlr1us/1/mlEVpKsGrThn6hCcsQuKrSDMV+z8QAQNsgBoegqRixf&#13;
-h9u3CAW2lw==</DigestValue></Reference></SignedInfo><SignatureValue>JiH9o9CzuI0eh12ofrcJSa6J5wNdFKu/XrlbQgdHOpFFuAImueW36kq0RB6u/qDF3swpx+FWB3GL&#13;
-SYwVg47JpP3CD0N2ZOZgG4j0id08cXRi5PKN9UM6zprL5KfXK0twmSB1M6WO3F0RzeRmjhM02cPD&#13;
-Fm1BFmToBqiNBB0MYD+IwZuUArOwwNKZUOqNnSp5zMc8MTpyUXVYjBcF1zRmGEJC21n22WwdQYS9&#13;
-mS0wSSwV8w9ECPWYL7NNI8TSeWAYRfMcUQqaGd9aRsF9R4q3puit0/Pn8xzt+rg1940MKiSlEeO4&#13;
-Ojw6PThV+ieK+DBx171PPme7ML3DA7ydiY2rDA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <orgomg.cwm.resource.relational:Schema dataManager="_gKZuAJSHEe295KQoOLpnXg" name="SIGED" xmi:id="_ghy6UJSHEe295KQoOLpnXg">
+    <ownedElement comment="Almacena informacion de los distritos existentes por provincia en el pais como parte del Ubigeo." id="_rkAsEJWvEe2E24wxIypyDw" label="DISTRITO" name="DISTRITO" tableType="TABLE" xmi:id="_rkAsEZWvEe2E24wxIypyDw" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="Almacena informacion de los distritos existentes por provincia en el pais como parte del Ubigeo." xmi:id="_rkAsEpWvEe2E24wxIypyDw"/>
+      <feature comment="Numero que identifica a una provincia en cuestion" key="true" label="IDDISTRITO" length="38" name="IDDISTRITO" nullable="false" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_rkAsE5WvEe2E24wxIypyDw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Numero que identifica a una provincia en cuestion" xmi:id="_rkAsFJWvEe2E24wxIypyDw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_rkAsFZWvEe2E24wxIypyDw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" numericPrecisionRadix="10" xmi:id="_rkAsFpWvEe2E24wxIypyDw"/>
+      </feature>
+      <feature comment="Referencia a la provincia" label="PROVINCIA" length="38" name="PROVINCIA" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_rkAsF5WvEe2E24wxIypyDw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Referencia a la provincia" xmi:id="_rkAsGJWvEe2E24wxIypyDw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_rkAsGZWvEe2E24wxIypyDw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_rkAsGpWvEe2E24wxIypyDw"/>
+      </feature>
+      <feature comment="Nombre del distrito" label="NOMBRE" length="100" name="NOMBRE" sourceType="VARCHAR2" talendType="id_String" xmi:id="_rkAsG5WvEe2E24wxIypyDw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Nombre del distrito" xmi:id="_rkAsHJWvEe2E24wxIypyDw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_rkAsHZWvEe2E24wxIypyDw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_rkAsHpWvEe2E24wxIypyDw"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_03c7aaa4-6b35-49a2-98ca-3b2205c1bde8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ckCfhnvrMjtIiYcZNXbpdYhmehGmdoRk6jA7U6+kVE9/izREwJ3lZOq9gdjLdOL0Z1vJM39uWKzc&#13;
+Z5wqaYI1/w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_719d96e5-e976-4162-8acc-e80da6527e40"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>k79eTzr8P/jpdGSzGdvJfI393qCTV6rw6NA+M0umjF1u7fUK1UhxyRv5FyV8PG25bcALs/Jh5FDy&#13;
+EOowcPGbZA==</DigestValue></Reference></SignedInfo><SignatureValue>a7d0t+tiUcHs51RyC6TxQh3CK6YTCApA6IcZHUZ/oBbTI3AJzUiXXgmtEblzfe+3PwjfsJsNww6Q&#13;
+QkJLWMTgZhsK1DRbMPEmqrbatfFB3EilQAy15ekuBU2q7StpOPQzSMR03y2H149TIcFY6ABU/qNF&#13;
+2RA8Xaqw8YxOVwKRLmVJj5zITGfgVyHevwEBMA+RCmpZvKrN0ca8kNWyKjv3P9tG+lFY2kQErf2Z&#13;
+Nz+hhh3ASjGlscISmYNziqkGydY9ejlOeTEU+inPNlbbpFZnmwHVPAQGddSTGmRwdLKsRvQAxYvg&#13;
+f0mTdUshWCbkEgUfBFDFwPclJhoC20W0Pu3rPA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -42,4 +61,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e1deb8cd-6430-46be-ab06-4b663e73f235" Target="#_282134bc-6666-4e35-bb1d-131aa854ab29"><Timestamp>2023-01-15 03:48:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_719d96e5-e976-4162-8acc-e80da6527e40" Target="#_03c7aaa4-6b35-49a2-98ca-3b2205c1bde8"><Timestamp>2023-01-16 15:08:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
